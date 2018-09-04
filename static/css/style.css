@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f3f3f3;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1280px;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.page {
+  padding-top: 45px;
+  padding-bottom: 100px;
+}
+
+.page-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3e4c5a;
+}
+
+
+/*-------------------*/
+/** Кнопки **/
+
+.btn {
+  padding: 7px 20px 9px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-white {
+  color: #5a595e;
+  background-color: #fbfbfa;
+  border: 1px solid #c7cacd;
+  box-shadow: none;
+}
+
+.btn-white:hover {
+  background-color: #fff;
+  color: #2d7db5;
+}
+
+.btn-white:active {
+  box-shadow: inset 0 2px 2px 0 #c7cacd;
+}
+
+.btn-green {
+  color: #fff;
+  background-color: #5cab79;
+  border: solid 1px #5cab79;
+  box-shadow: none;
+}
+
+.btn-green:hover {
+  box-shadow: inset 0 -2px 0 0 #45815c;
+}
+
+.btn-green:active {
+  box-shadow: inset 0 2px 2px 0 #45815c;
+}
+
+.btn-string {
+  font-size: 18px;
+  text-align: right;
+  color: #1456a3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-string:hover {
+  text-decoration: underline;
+}
